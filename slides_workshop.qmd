@@ -1,0 +1,998 @@
+---
+title: "Workshop em R"
+author: "Prof. Felipe Madruga"
+lightbox: true
+
+format: 
+  live-revealjs:
+    theme: [default, custom.scss]
+    code-block-height: 650px
+    logo: imagens/logos.png
+    transition: slide
+
+engine: knitr
+---
+
+{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
+
+# Considerações Iniciais
+
+## Agradecimentos {.center}
+
+![](imagens/logos.png){fig-align="center"}
+
+::: footer
+Workshop em R: Considerações Iniciais
+:::
+
+## Objetivos com o Workshop {.center}
+
+Apresentar a liguagem de programação R de uma maneira simples, com a esperança de que mais pessoas passem a utilizar essa maravilhosa ferramente de análise de dados.
+
+Diferenciar uma análise de dados feita por meio de uma linguagem de programação daquilo que tradicionalmente utilizamos, planilhas, sejam Excel ou Google Planilhas.
+
+*Fortalecermos uma comunidade de pessoas que possam trocar experiências no uso do R.*
+
+::: footer
+Workshop em R: Considerações Iniciais
+:::
+
+## Códigos e Materiais de Apoio {.center}
+
+Todos os códigos apresentados são para serem implementados no RStudio, embora os códigos apresentados aqui também possam ser executadas no próprio slide. 
+
+Está disponível também para download o script com os códigos que serão utilizados no decorrer do workshop. 
+
+<div>
+
+<a href="https://dl.dropboxusercontent.com/s/abcd1234/arquivo.csv" download="arquivo.csv" style="text-decoration: none; display: inline-flex; align-items: center;">
+  <img src="https://img.icons8.com/?size=100&id=rEdbaA7y65Bz&format=png&color=000000" alt="Download Icon" width="20" height="20" style="margin-right: 5px; filter: invert(27%) sepia(96%) saturate(6165%) hue-rotate(358deg) brightness(94%) contrast(102%);">
+  <span style="color: #058206">Baixar script com os códigos</span>
+</a>
+
+
+</div>
+
+Vocês podem contar ainda com um pequeno material de apoio, uma pequena apostila, preparada para que possam revisar alguns dos conceitos utilizados hoje!
+
+<div>
+
+<a href="https://felipemadruga.github.io/workshop/" target="_blank" style="text-decoration: none; display: inline-flex; align-items: center;">
+  <img src="https://img.icons8.com/?size=100&id=rEdbaA7y65Bz&format=png&color=000000" alt="Download Icon" width="20" height="20" style="margin-right: 5px; filter: invert(27%) sepia(96%) saturate(6165%) hue-rotate(358deg) brightness(94%) contrast(102%);">
+  <span style="color: #058206">Apostila</span>
+</a>
+
+
+</div>
+
+::: footer
+Workshop em R: Considerações Iniciais
+:::
+
+# Primeiros passos
+
+## Diferenciando R do RStudio {.center}
+
+*O RStudio é apenas um programa que roda nossos códigos do R*. Assim, quando falamos em R estamos falando da linguagem de programação R, mas que acabamos escrevendo dentro do RStudio.
+
+*A liguagem R pode ser utilizada em outras IDEs, como no VSCode ou Google Colab! Mas grande parte da comunidade utiliza mesmo o RStudio.*
+
+![](imagens/Captura%20de%20tela%202024-10-24%20133056.png){fig-align="center"}
+
+::: footer
+Workshop em R: Primeiros passos
+:::
+
+## Janelas do RStudio
+
+![](imagens/rstudio.png){fig-align="center"}
+
+::: footer
+Workshop em R: Primeiros passos
+:::
+
+## Scripts {.center}
+
+Os códigos que queremos executar dentro do RStudio são escritos dentro daquilo que chamamos de `script`, como se fosse um caderno.
+
+*Um script vai acabar sendo uma nova janela dentro do RStudio!*
+
+Podemos criar um novo script no RStudio da seguinte maneira: 
+
+`File > New File > R Script`
+
+::: footer
+Workshop em R: Primeiros passos
+:::
+
+## 
+
+![](imagens/imagens_criada_material5.png){fig-align="center"}
+
+::: footer
+Workshop em R: Primeiros passos
+:::
+
+## 
+
+![](imagens/imagens_criada_material7.png){fig-align="center"}
+
+::: footer
+Workshop em R: Primeiros passos
+:::
+
+## *Console* do RStudio {.center}
+
+Embora nossos códigos são escritos em nosso script, seus resultados são sempre executados dentro do painel chamado **Console**.
+
+Podemos executar um código que está em nosso *script* ao posicionarmos o cursor no final do código ( ou selecionando o código) e na sequência apertarmos as seguintes teclas: `CTRL + ENTER`
+
+::: footer
+Workshop em R: Primeiros passos
+:::
+
+## 
+
+![](imagens/imagens_criada_material9.png){fig-align="center"}
+
+::: footer
+Workshop em R: Primeiros passos
+:::
+
+## Alguns exemplos
+
+```{webr}
+20 + log(2)
+```
+
+```{webr}
+20/5
+```
+
+```{webr}
+# Fazendo uma multiplicação
+3*3
+```
+
+```{webr}
+# 3*3
+```
+
+::: footer
+Workshop em R: Primeiros passos
+:::
+
+## Comentários com `#` {.center}
+
+Mantenha o seu `script` organizado comentando com `#` aquilo que você vai fazendo ao longo de sua análise.
+
+Isso ajudar se o seu trabalho é colaborativo, mas também pode ajudar você futuramente, quando precisar voltar ao script para inspecionar algum ponto dele.
+
+*Somente tome cuidado para não comentar uma parte do código que precisa ser executado!*
+
+::: footer
+Workshop em R: Primeiros passos
+:::
+
+## Salvando scripts
+
+Todo script poderá ser salvo, dando um nome para ele!
+
+![](imagens/salvando_script.png){fig-align="center"}
+
+::: footer
+Workshop em R: Primeiros passos
+:::
+
+## Abrindo scripts
+
+Da mesma forma, poderemos abrir um script sempre que desejarmos!
+
+![](imagens/abrir_script.png){fig-align="center"}
+
+::: footer
+Workshop em R: Primeiros passos
+:::
+
+
+# Pacotes e suas funções
+
+## 
+
+Toda função utilizada no R virá de algum **pacote**. Para que possamos utilizar essas função precisamos **instalar o pacote** que contém a função e depois fazer seu **carregamento**.
+
+![](images/clipboard-3500877895.jpeg){fig-align="center"}
+
+*Sem o pacote ter sido importado e carregado não podemos utilizar suas funções!*
+
+::: footer
+Workshop em R: Pacotes e suas funções
+:::
+
+# Nosso Primeiro Erro
+
+Tentar usar uma função sem ter carregado o pacote!
+
+::: footer
+Workshop em R: Pacotes e suas funções
+:::
+
+## Exemplo prático {.center}
+
+Para carregar uma base de dados que está no formato `.csv` podemos utilizar a função `read_csv()` do pacote `readr`.
+
+Por exemplo, vamos tentar carregar a base de dados com informações sobre `filmes` que pode ser encontrada no seguinte [link](https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-10-23/movie_profit.csv){target="_blank" style="color: #058206"}.
+
+::: footer
+Workshop em R: Pacotes e suas funções
+:::
+
+## Exemplo prático {.center}
+
+O código que utilizaríamos para carregar a base de dados com a função `read_csv()` seria:
+
+```{webr}
+#| caption: "Importando a base de dados"
+#| startover: false
+
+# baixando nossa primeira base de dados
+filmes <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-10-23/movie_profit.csv")
+```
+
+::: {.callout-note appearance="simple"}
+*Como o pacote não foi previamente importado e carregado, o R não encontra a função `read_csv()` e retorna um erro!*
+:::
+
+::: footer
+Workshop em R: Pacotes e suas funções
+:::
+
+# Importando um pacote
+
+Utilizando a função `install.packages()`
+
+::: footer
+Workshop em R: Pacotes e suas funções
+:::
+
+## Função `install.packages()`
+
+Vamos importar o pacote `readr` que contém funções para importar bases de dados, procedimento que será feito utilizando a função `install.packages()`, sendo o argumento dentro dela o nome do pacote, **entre aspas**.
+
+```{webr}
+#| caption: "Importando o Pacote"
+#| startover: false
+#| warning: false
+# instalando nosso primeiro pacote dplyr
+install.packages("readr")
+```
+
+::: footer
+Workshop em R: Pacotes e suas funções
+:::
+
+# Carregando um pacote
+
+Utilizando a função `library()`
+
+::: footer
+Workshop em R: Pacotes e suas funções
+:::
+
+## Função `library()`
+
+Depois de importar o pacote precisamos carrega-lo para que as funções estejam disponíveis. Fazemos isso com a função `library()`, onde o argumento dela será o nome do pacote a ser carregado, mas agora **sem aspas**.
+
+```{webr}
+#| caption: "Carregando o Pacote"
+#| startover: false
+#| warning: false
+# carregando nosso pacote dplyr
+library(readr)
+```
+
+::: footer
+Workshop em R: Pacotes e suas funções
+:::
+
+# Nosso primeiro acerto
+
+Carregando a base de dados de maneira certa!
+
+::: footer
+Workshop em R: Pacotes e suas funções
+:::
+
+## Carregando a base de dados `filmes`
+
+Agora que o pacote que contém a função está carregado, finalmente poderemos fazer uso da função `read_csv()` para carregar nossos dados. Vamos ao teste!!
+
+```{webr}
+#| caption: "Importando a base de dados"
+#| startover: false
+#| warning: false
+# baixando nossa primeira base de dados
+filmes <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-10-23/movie_profit.csv")
+```
+
+::: footer
+Workshop em R: Pacotes e suas funções
+:::
+
+## Consultando nossa base importada
+
+Podemos verificar como é nossa base de dados ao digitar seu nome.
+
+```{webr}
+#| caption: "Verificando nossa base de dados"
+#| startover: false
+#| warning: false
+filmes
+```
+
+::: footer
+Workshop em R: Pacotes e suas funções
+:::
+
+## Bases de dados no RStudio
+
+Todas as bases de dados importadas para o R são armazenadas na janela *Environment*.
+
+![](imagens/imagens_criada_material.png){fig-align="center"}
+
+::: footer
+Workshop em R: Pacotes e suas funções
+:::
+
+## Função `view()`
+
+Podemos ver os dados em uma janela mais ampla com a função `view(filmes)`.
+
+![](imagens/imagens_criada_material11.png){fig-align="center"}
+
+::: footer
+Workshop em R: Pacotes e suas funções
+:::
+
+
+# Exercício Rápido {.center}
+
+Com o que vimos até aqui, instale e carregue o seguinte pacote: `dplyr`
+
+::: footer
+Workshop em R: Pacotes e suas funções
+:::
+
+## Correção {.center}
+
+Utilizamos o seguinte código para carregar o pacote:
+
+```{webr}
+#| caption: "Importando o Pacote"
+#| startover: false
+#| warning: false
+install.packages("dplyr")
+```
+
+Na sequência, fazemos o carregamento do pacote para o R conseguir acessar as funções dele.
+
+```{webr}
+#| caption: "Carregando o Pacote"
+#| startover: false
+#| warning: false
+library(dplyr)
+```
+
+::: footer
+Workshop em R: Pacotes e suas funções
+:::
+
+# Manipulando os dados
+
+## Funções do pacote `dplyr` {.center}
+
+Vamos utilizar diversas funções do pacote `dplyr` para manipular nosso banco de dados e conseguir fazer algum tipo de análise com ele.
+
+Dentro dessas funções, algumas vão controlar o número de variáveis, outras vão aplicar filtros e outras vão nos ajudar a realizar cálculos a partir das colunas já existentes, podendo dar origem a novas colunas.
+
+::: footer
+Workshop em R: Manipulando os dados
+:::
+
+# Função `select()`
+
+Permite selecionar colunas do nosso banco de dados
+
+::: footer
+Workshop em R: Manipulando os dados
+:::
+
+## Syntax da função `select()` 1
+
+Os argumentos da função `select()` serão os nomes das variáveis do nosso banco de dados que gostaríamos de trabalhar. Por exemplo, abaixo temos o código que seleciona apenas duas variáveis da base `filmes`:
+
+```{webr}
+# selecionando movie e genre
+filmes |> 
+  select(movie, genre)
+```
+
+## Syntax da função `select()` 2
+
+É ainda possível indicar quais variáveis não queremos, indicando um sinal de menos na frente da variável, como mostra o código seguinte:
+
+```{webr}
+# selecionando todas as variáveis, menos movie e genre
+filmes |> 
+  select(movie, genre)
+```
+
+## Syntax da função `select()` 3
+
+As vezes vai ser interessante indicar a variável a ser selecionada pela posição numérica que ela ocupa no banco de dados!
+
+```{webr}
+# eliminando a primeira coluna
+filmes |> 
+  select(-1)
+```
+
+
+::: footer
+Workshop em R: Manipulando os dados
+:::
+
+# Operador Pipe - `|>` 
+Funcionalidade que permite ganhos de produtividade ao escrever códigos.
+
+## Lógica de funcionamento do `|> ` {.center}
+
+![](imagens/pipe.png){fig-align="center"}
+
+::: footer
+Workshop em R: Manipulando os dados
+:::
+
+# Função `rename()`
+Possibilita a modificação dos nomes de nossas variáveis.
+
+## Syntax da função `rename()`
+
+A modificação do nome de uma variável vai exigir apenas que dentro da função `rename()` identifiquemos o *novo nome* a ser dado para a variável.
+
+```{webr}
+# modificando o nome da variável
+filmes |> 
+  rename(data_de_lancamento = release_date)
+```
+
+::: footer
+Workshop em R: Manipulando os dados
+:::
+
+## Função `select()` e nomes
+
+É possível modificar o nome das variáveis utilizando a função `select()`, algo que poderia nos poupar tempo!
+
+```{webr}
+filmes |> 
+  select(filme = movie, arrecadacao_mundial = 6)
+```
+
+
+::: footer
+Workshop em R: Manipulando os dados
+:::
+
+
+# Função `arrange()`
+
+Com essa função é possível fazer classificações da variável de maneira crescente ou decrescente.
+
+## Syntax da função `arrange()`
+
+Por padrão, a classificação será sempre de maneira crescente no uso da função `arrange()`.
+
+```{webr}
+filmes |> 
+  arrange(worldwide_gross)
+```
+
+
+
+::: footer
+Workshop em R: Manipulando os dados
+:::
+
+## Odernando de maneira decrescente
+
+Para ordenarmos do maior para o menor, devemos utilizar o argumento `desc()` dentro da função `arrange()`.
+
+```{webr}
+filmes |> 
+  arrange(desc(worldwide_gross))
+```
+
+
+
+::: footer
+Workshop em R: Manipulando os dados
+:::
+
+# Função `slice()`
+
+Servirá para quando nosso objetivo for selecionar determinadas linhas de nosso banco de dados.
+
+## Syntax da função `slice()`
+
+Para utilizar `slice()`, precisamos apenas indicar quais são as linhas que desejamos obter ao final da execução do código.
+
+```{webr}
+# selecionando as dez primeiras linhas
+filmes |> 
+  slice(1:10)
+```
+
+
+::: footer
+Workshop em R: Manipulando os dados
+:::
+
+## `slice_max()`
+
+Uma interessante variação da função `slice()` para combinar com a função `arrange()`. Servirá para selecionar os maiores valores de determinada variável.
+
+```{webr}
+filmes |> 
+  slice_max(
+    # indicando a variável que a função deve classificar
+    order_by = worldwide_gross, 
+    # o numero de linhas que ela deve retornar
+    n = 5)
+```
+
+
+::: footer
+Workshop em R: Manipulando os dados
+:::
+
+# Função `filter()`
+
+Maneira na qual podemos selecionar linhas por meio de critérios lógicos.
+
+
+## Syntax da função `filter()`
+
+No geral, vamos utilizar algum tipo de operador lógico junto da função filter, por exemplo, na sequência, queremos selecionar os valores que sejam maiores que 500 milhões.
+
+```{webr}
+# selecionando filmes com faturamento mundial maior do que 500 milhões
+filmes |> 
+  filter(worldwide_gross > 500000000)
+```
+
+
+::: footer
+Workshop em R: Manipulando os dados
+:::
+
+## Operadores lógicos {.center}
+
+Os operadores comuns de serem utilizados dentro da função `filter()`:
+
+1. `==` retornar algo que seja exatamente igual ao critério pedido;
+2. `>`  retorna algo que seja estritamente maior do que o critério pedido;
+3. `>=` retorna algo que seja maior ou igual ao critério pedido;
+4. `<` retorna algo que seja estritamente menor do que o critério pedido;
+5. `<=` retorna algo que seja menor ou igual ao critério pedido;
+6. `!=` retorna algo que não seja igual ao critério pedido;
+
+
+
+::: footer
+Workshop em R: Manipulando os dados
+:::
+
+## Filtros mais complexos
+
+Em varias situações, vamos querer utilizar filtros aplicados sobre mais de uma variável, ou para um intervalo de valores. Nesse caso, vamos precisar utilizar os operadores `&`, `|` e `%in%`. Por exemplo, no caso do `&`, vamos utilizar em casos onde temos duas variáveis a serem filtradas com critérios diferentes.
+
+```{webr}
+filmes |> 
+  filter(mpaa_rating == "PG" & genre == "Comedy") |> 
+  select(movie, mpaa_rating, production_budget)
+```
+
+::: footer
+Workshop em R: Manipulando os dados
+:::
+
+## Função auxiliar `between()`
+
+Quando fizermos comparações entre valores númericos da seguinte maneira:
+
+```{webr}
+filmes |> 
+  filter(production_budget >= 5000000 & production_budget <= 10000000)
+```
+
+A melhor alternativa é utilizar a função `between()` dentro do `filter()`:
+
+
+```{webr}
+filmes |> 
+  filter(
+    between(production_budget, 5000000, 10000000)
+    )
+```
+
+::: footer
+Workshop em R: Manipulando os dados
+:::
+
+## Uso do `|` e `%in%`
+
+Em algumas situações nosso objetivo será o de filtrar mais de um critério para determinada variável, como no código abaixo:
+
+```{webr}
+filmes |> 
+  filter(distributor == "MGM" | distributor == "Lionsgate" | distributor == "Universal")
+```
+
+Mas podemos utilizar `%in%` para deixar o código menos *pesado* e repetitivo:
+
+```{webr}
+filmes |> 
+  filter(distributor %in% c("MGM", "Lionsgate", "Universal") )
+```
+
+::: footer
+Workshop em R: Manipulando os dados
+:::
+
+# Construindo medidas resumo
+Nesta parte vamos utilizar funções que possam resumir as informações que tenhamos em determinada variável.
+
+# Função `count()`
+
+Função que serve para contar o número de observações de uma variável de nosso banco de dados.
+
+## Syntax da função `count()`
+
+Para contar o número de valores dentro de uma variável com a função `count()`, basta indicar quais das variáveis queremos que  ela retorne a quantidade de valores.
+
+```{webr}
+filmes |> 
+  count(genre)
+```
+
+::: footer
+Workshop em R: Construindo medidas resumo
+:::
+
+# Valores `NA`
+
+São informações que não existem para determinada variável, e que não devem ser confundidas com valores iguais a zero! Podemos ver um exemplo no código a seguir: 
+
+## Identificando variáveis `NA`
+
+Podemos verificar no próximo código, que alguns dos valores da variável são indicados como `NA`.
+
+```{webr}
+filmes |> 
+  count(mpaa_rating, sort = T)
+```
+
+
+::: footer
+Workshop em R: Construindo medidas resumo
+:::
+
+## Filtrando valores `NA`
+
+Em muitas situações, vamos precisar trabalhar com a função `filter()` aplicada sobre valores `NA`, e a maneira correta de fazer isso é por meio da seguinte syntax.
+
+```{webr}
+filmes |> 
+  filter(is.na(mpaa_rating))
+```
+
+
+::: footer
+Workshop em R: Construindo medidas resumo
+:::
+
+## Eliminando valores `NA`
+
+Quando identificamos os valores `NAs` em nossa base e precisarmos descartar esses valores, temos a seguinte possibilidade ao utilizarmos a função `filter()`:
+
+```{webr}
+filmes |> 
+  filter(!is.na(mpaa_rating))
+```
+
+
+::: footer
+Workshop em R: Construindo medidas resumo
+:::
+
+## Função `drop_na()`
+
+Outra possibilidade é aplicar a função `drop_na()` ao nosso banco de dados. Podemos fazer isso para uma única variável:
+
+```{webr}
+# eliminando valores ausentes da variável mpaa_rating
+filmes |> 
+  drop_na(mpaa_rating)
+```
+
+Mas podemos aplicar isso a todas as variáveis do banco de dados.
+
+```{webr}
+# eliminando qualquer valor ausente
+filmes |> 
+  drop_na()
+```
+
+::: footer
+Workshop em R: Construindo medidas resumo
+:::
+
+# Função `distinct()`
+Uma maneira de identificar quais são os valores distintos de uma variável.
+
+## Syntax da função `distinct()`
+
+Para que possamos identificar quais são os valores únicos que uma variável possui, basta indicar dentro da função `distinct()` o nome da variável que queremos identificar esses valores.
+
+```{webr}
+# quais os generos dos filmes 
+filmes |> 
+  distinct(genre)
+```
+
+
+::: footer
+Workshop em R: Construindo medidas resumo
+:::
+
+# Função `summarise()`
+
+Com ela será possível calcularmos uma estatística a partir da variável de interesse, como a média, soma, etc.
+
+## Syntax da função `summarise()`
+
+Para utilizar a função summarise() vamos precisar primeiro dar uma nome para a estatística que queremos, depois aplicar algumas das funções auxiliares que *resumem* as variáveis de nosso interesse. Algumas dessas funções auxiliares são: `mean()`, `sum()`, `median()`.  
+
+```{webr}
+filmes |> 
+  summarise(
+    arrecadacao = sum(worldwide_gross)
+  )
+```
+
+
+::: footer
+Workshop em R: Construindo medidas resumo
+:::
+
+## `summarise()` com valores `NA`
+
+Precisamos tomar cuidado quando a variável que queremos obter a estatística possuir valores `NA`. Caso não seja indicado na função para que esses valores sejam ignorados, teremos um erro no cálculo. 
+
+```{webr}
+filmes |> 
+  summarise(
+    r_total_domestica = sum(domestic_gross, na.rm = TRUE)
+  )
+```
+
+
+::: footer
+Workshop em R: Construindo medidas resumo
+:::
+
+# Função `group_by()`
+Uma ótima combinação no uso da função `summarise()` é realizar cálculos agrupados com `group_by()`
+
+## Syntax da função `group_by()`
+
+Caso nosso objetivo seja o de retornar uma estatística desagregada para diferentes grupos presentes em uma outra variável, podemos fazer uso da função `group_by()` antes de aplicarmos `summarise()`.
+
+```{webr}
+filmes |> 
+  group_by(genre) |> 
+  summarise(
+    receita = sum(worldwide_gross)
+  )
+```
+
+::: footer
+Workshop em R: Construindo medidas resumo
+:::
+
+# Adicionando Colunas
+Nessa parte veremos como é possível criar uma nova variável para ser adicionada as demais que fazem parte de nosso banco de dados.
+
+## Primeiros ajustes
+
+Vamos trabalhar como uma versão menor de nosso banco de dados, apenas para melhor visualização. Para isso vamos utilizar o seguinte código:
+
+```{webr}
+maiores_bilheterias <- 
+  filmes |> 
+  slice_max(domestic_gross, n = 10) |> 
+  select(movie, domestic_gross, worldwide_gross, production_budget)
+```
+
+
+::: footer
+Workshop em R: Adicionando Colunas
+:::
+
+# Função `mutate()`
+
+Podemos adicionar sempre uma nova variável ao nosso banco de dados com o uso da função `mutate()`
+
+## Syntax da função `mutate()`
+
+A maneira como adicionamos uma nova variável é muito similar ao uso da função `summarise()`, primeiro precisamos indicar o nome da nova variável, depois o cálculo que vai produzir a nova variável.
+
+```{webr}
+maiores_bilheterias |> 
+  mutate(
+    # construindo nossa nova variável receita_total
+    receita_total = domestic_gross + worldwide_gross
+  )
+```
+
+::: footer
+Workshop em R: Construindo medidas resumo
+:::
+
+## Exemplos adicionais
+
+```{webr}
+maiores_bilheterias |> 
+  mutate(
+    # construindo nossa nova variável receita_total
+    receita_total = domestic_gross + worldwide_gross, 
+    # lucro de cada um dos filmes
+    lucro = receita_total - production_budget, 
+    # transformando os valores
+    lucro_1 = lucro*(1/1000000)
+  ) |> 
+  select(filme = movie, lucro, lucro_1) |> 
+  arrange(desc(lucro))
+```
+
+::: footer
+Workshop em R: Construindo medidas resumo
+:::
+
+# Função `if_else()`
+
+Permite realizar cálculos de condições do tipo *Se...Então*.
+
+## Syntax da função `if_else()`
+
+Precisaremos utilizar em conjunto com `mutate()` para que a nova coluna seja adicionada com base na condição definida em `if_else()`.
+
+```{webr}
+filmes |> 
+  select(movie, genre) |> 
+  mutate(
+    novo_genero = if_else(
+      # condição lógica a ser analisada
+      genre == "Comedy",
+      # valor se verdadeiro
+      "Comédia", 
+      # valor se falso
+      "Demais generos"
+    )
+  )
+```
+
+
+::: footer
+Workshop em R: Construindo medidas resumo
+:::
+
+
+# Função `case_when()`
+Permite expandir a quantidade de condições da função `if_else()`.
+
+## Syntax da função `case_when()`
+
+Também é uma função que vai retornar uma nova coluna, por isso seu uso vai estar associado a `mutate()`. Contudo, permite adicionar mais condições do que em `if_else()`.
+
+```{webr}
+filmes |> 
+  count(distributor, sort = T) |> 
+  mutate(
+    classificacao = case_when(
+      n >= 200 ~ "Top 200+", 
+      n >= 100 ~ "Top 100+", 
+      n >= 50 ~ "Top 50+", 
+      .default = "Demais distribuidoras"
+    )
+  ) 
+```
+
+::: footer
+Workshop em R: Construindo medidas resumo
+:::
+
+# Importando dados do PC
+Vamos o que é necessário para importar dados que estão em nosso computador.
+
+# Dados em **.csv**
+Muitos dos dados vão estar armazenados em arquivos com a extensão *.csv*. Isso vai exigir identificar qual o separador dos nossos dos valores nessa base. 
+
+Vamos trabalhar com a seguinte base dados:
+<a href="https://dl.dropboxusercontent.com/scl/fi/zy31bdsf2emvcc0v27tad/movie_profit.csv?rlkey=2bcdmlem455w06xc3s3hen1ib&st=ntba6c8v&dl=0" download> <span style="color: #058206;">Arquivo de exemplo!</span>
+
+</a>
+
+## Função `read_csv()`
+
+Permite baixar arquivos **.csv** cujo delimitador é a ",". É preciso especificar dentro da função `read_csv()` o caminho do diretório onde se encontra o arquivo a ser carregado.
+
+Precisamos indicar o caminho por meio de uma das seguintes formas:
+
+```{webr}
+# Primeira forma
+dados <- read_csv("C:\\Users\\Felipe\\Documents\\meus_dados\\movie_profit.csv")
+```
+
+Ou por meio da seguinte forma:
+
+```{webr}
+# Segunda forma
+dados_1 <- read_csv("C:/Users/Felipe/Documents/meus_dados/movie_profit.csv")
+```
+
+::: footer
+Workshop em R: Importando dados do PC
+:::
+
+# Importando planilhas de *Excel*
+Planilhas também podem ser importadas, mas para isso vamos precisar de um novo pacote `readxl`. 
+
+Vamos trabalhar aqui com o seguinte exemplo:
+<a href="https://dl.dropboxusercontent.com/scl/fi/343k28k6nkxn5kzrvpevg/movie_profit.xlsx?rlkey=prxpdwa9ct0pey3ke4p1x0zfr&st=wv1sy8rb&dl=0" download> <span style="color: #058206;">Arquivo de exemplo!</span>
+
+</a>
+
+## Syntax da função `read_xlsx()`
+A maneira como fazemos a importação de uma arquivo de excel é a mesma da que foi feita para o arquivo em .csv. Vamos apenas modificar o nome da função.
+
+```{webr}
+library(readxl) # carregando nosso pacote
+# Segunda forma
+dados_1 <- read_xlsx("C:/Users/Felipe/Documents/meus_dados/movie_profit.xlsx")
+```
+
+::: footer
+Workshop em R: Importando dados do PC
+:::
+
+# Criando bases de dados com `tibble()`
+
+É possível também que seja criado uma pequena base de dados manualmente, embora seja recomendado que seu tamanho seja reduzido.
+
+## Syntax da função `tibble()`
+
+A maneira como os dados serão criados será simples. dentro da função `tibble()` indicamos o nome das variáveis, depois dentro de `c()`, indicamos os valores associados as variáveis.
+
+```{webr}
+meus_dados <- tibble(
+  nome = c("João", "Maria", "Carlos"), 
+  nota = c(0.5, 4, 8)
+)
+```
+
+
+::: footer
+Workshop em R: Importando dados do PC
+:::

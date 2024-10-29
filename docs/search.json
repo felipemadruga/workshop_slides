@@ -1,0 +1,401 @@
+[
+  {
+    "objectID": "slides_workshop.html#agradecimentos",
+    "href": "slides_workshop.html#agradecimentos",
+    "title": "Workshop em R",
+    "section": "Agradecimentos",
+    "text": "Agradecimentos\n\n\n\n\n\n\nWorkshop em R: Considerações Iniciais"
+  },
+  {
+    "objectID": "slides_workshop.html#objetivos-com-o-workshop",
+    "href": "slides_workshop.html#objetivos-com-o-workshop",
+    "title": "Workshop em R",
+    "section": "Objetivos com o Workshop",
+    "text": "Objetivos com o Workshop\nApresentar a liguagem de programação R de uma maneira simples, com a esperança de que mais pessoas passem a utilizar essa maravilhosa ferramente de análise de dados.\nDiferenciar uma análise de dados feita por meio de uma linguagem de programação daquilo que tradicionalmente utilizamos, planilhas, sejam Excel ou Google Planilhas.\nFortalecermos uma comunidade de pessoas que possam trocar experiências no uso do R.\n\nWorkshop em R: Considerações Iniciais"
+  },
+  {
+    "objectID": "slides_workshop.html#códigos-e-materiais-de-apoio",
+    "href": "slides_workshop.html#códigos-e-materiais-de-apoio",
+    "title": "Workshop em R",
+    "section": "Códigos e Materiais de Apoio",
+    "text": "Códigos e Materiais de Apoio\nTodos os códigos apresentados são para serem implementados no RStudio, embora os códigos apresentados aqui também possam ser executadas no próprio slide.\nEstá disponível também para download o script com os códigos que serão utilizados no decorrer do workshop.\n\n  Baixar script com os códigos \n\nVocês podem contar ainda com um pequeno material de apoio, uma pequena apostila, preparada para que possam revisar alguns dos conceitos utilizados hoje!\n\n  Apostila \n\n\nWorkshop em R: Considerações Iniciais"
+  },
+  {
+    "objectID": "slides_workshop.html#diferenciando-r-do-rstudio",
+    "href": "slides_workshop.html#diferenciando-r-do-rstudio",
+    "title": "Workshop em R",
+    "section": "Diferenciando R do RStudio",
+    "text": "Diferenciando R do RStudio\nO RStudio é apenas um programa que roda nossos códigos do R. Assim, quando falamos em R estamos falando da linguagem de programação R, mas que acabamos escrevendo dentro do RStudio.\nA liguagem R pode ser utilizada em outras IDEs, como no VSCode ou Google Colab! Mas grande parte da comunidade utiliza mesmo o RStudio.\n\n\n\n\n\n\nWorkshop em R: Primeiros passos"
+  },
+  {
+    "objectID": "slides_workshop.html#janelas-do-rstudio",
+    "href": "slides_workshop.html#janelas-do-rstudio",
+    "title": "Workshop em R",
+    "section": "Janelas do RStudio",
+    "text": "Janelas do RStudio\n\n\n\n\n\n\nWorkshop em R: Primeiros passos"
+  },
+  {
+    "objectID": "slides_workshop.html#scripts",
+    "href": "slides_workshop.html#scripts",
+    "title": "Workshop em R",
+    "section": "Scripts",
+    "text": "Scripts\nOs códigos que queremos executar dentro do RStudio são escritos dentro daquilo que chamamos de script, como se fosse um caderno.\nUm script vai acabar sendo uma nova janela dentro do RStudio!\nPodemos criar um novo script no RStudio da seguinte maneira:\nFile &gt; New File &gt; R Script\n\nWorkshop em R: Primeiros passos"
+  },
+  {
+    "objectID": "slides_workshop.html#section",
+    "href": "slides_workshop.html#section",
+    "title": "Workshop em R",
+    "section": "",
+    "text": "Workshop em R: Primeiros passos"
+  },
+  {
+    "objectID": "slides_workshop.html#section-1",
+    "href": "slides_workshop.html#section-1",
+    "title": "Workshop em R",
+    "section": "",
+    "text": "Workshop em R: Primeiros passos"
+  },
+  {
+    "objectID": "slides_workshop.html#console-do-rstudio",
+    "href": "slides_workshop.html#console-do-rstudio",
+    "title": "Workshop em R",
+    "section": "Console do RStudio",
+    "text": "Console do RStudio\nEmbora nossos códigos são escritos em nosso script, seus resultados são sempre executados dentro do painel chamado Console.\nPodemos executar um código que está em nosso script ao posicionarmos o cursor no final do código ( ou selecionando o código) e na sequência apertarmos as seguintes teclas: CTRL + ENTER\n\nWorkshop em R: Primeiros passos"
+  },
+  {
+    "objectID": "slides_workshop.html#section-2",
+    "href": "slides_workshop.html#section-2",
+    "title": "Workshop em R",
+    "section": "",
+    "text": "Workshop em R: Primeiros passos"
+  },
+  {
+    "objectID": "slides_workshop.html#alguns-exemplos",
+    "href": "slides_workshop.html#alguns-exemplos",
+    "title": "Workshop em R",
+    "section": "Alguns exemplos",
+    "text": "Alguns exemplos\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshop em R: Primeiros passos"
+  },
+  {
+    "objectID": "slides_workshop.html#comentários-com",
+    "href": "slides_workshop.html#comentários-com",
+    "title": "Workshop em R",
+    "section": "Comentários com #",
+    "text": "Comentários com #\nMantenha o seu script organizado comentando com # aquilo que você vai fazendo ao longo de sua análise.\nIsso ajudar se o seu trabalho é colaborativo, mas também pode ajudar você futuramente, quando precisar voltar ao script para inspecionar algum ponto dele.\nSomente tome cuidado para não comentar uma parte do código que precisa ser executado!\n\nWorkshop em R: Primeiros passos"
+  },
+  {
+    "objectID": "slides_workshop.html#salvando-scripts",
+    "href": "slides_workshop.html#salvando-scripts",
+    "title": "Workshop em R",
+    "section": "Salvando scripts",
+    "text": "Salvando scripts\nTodo script poderá ser salvo, dando um nome para ele!\n\n\n\n\n\n\nWorkshop em R: Primeiros passos"
+  },
+  {
+    "objectID": "slides_workshop.html#abrindo-scripts",
+    "href": "slides_workshop.html#abrindo-scripts",
+    "title": "Workshop em R",
+    "section": "Abrindo scripts",
+    "text": "Abrindo scripts\nDa mesma forma, poderemos abrir um script sempre que desejarmos!\n\n\n\n\n\n\nWorkshop em R: Primeiros passos"
+  },
+  {
+    "objectID": "slides_workshop.html#section-3",
+    "href": "slides_workshop.html#section-3",
+    "title": "Workshop em R",
+    "section": "",
+    "text": "Toda função utilizada no R virá de algum pacote. Para que possamos utilizar essas função precisamos instalar o pacote que contém a função e depois fazer seu carregamento.\n\n\n\n\n\nSem o pacote ter sido importado e carregado não podemos utilizar suas funções!\n\nWorkshop em R: Pacotes e suas funções"
+  },
+  {
+    "objectID": "slides_workshop.html#exemplo-prático",
+    "href": "slides_workshop.html#exemplo-prático",
+    "title": "Workshop em R",
+    "section": "Exemplo prático",
+    "text": "Exemplo prático\nPara carregar uma base de dados que está no formato .csv podemos utilizar a função read_csv() do pacote readr.\nPor exemplo, vamos tentar carregar a base de dados com informações sobre filmes que pode ser encontrada no seguinte link.\n\nWorkshop em R: Pacotes e suas funções"
+  },
+  {
+    "objectID": "slides_workshop.html#exemplo-prático-1",
+    "href": "slides_workshop.html#exemplo-prático-1",
+    "title": "Workshop em R",
+    "section": "Exemplo prático",
+    "text": "Exemplo prático\nO código que utilizaríamos para carregar a base de dados com a função read_csv() seria:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nComo o pacote não foi previamente importado e carregado, o R não encontra a função read_csv() e retorna um erro!\n\n\n\n\nWorkshop em R: Pacotes e suas funções"
+  },
+  {
+    "objectID": "slides_workshop.html#função-install.packages",
+    "href": "slides_workshop.html#função-install.packages",
+    "title": "Workshop em R",
+    "section": "Função install.packages()",
+    "text": "Função install.packages()\nVamos importar o pacote readr que contém funções para importar bases de dados, procedimento que será feito utilizando a função install.packages(), sendo o argumento dentro dela o nome do pacote, entre aspas.\n\n\n\n\n\n\n\n\n\nWorkshop em R: Pacotes e suas funções"
+  },
+  {
+    "objectID": "slides_workshop.html#função-library",
+    "href": "slides_workshop.html#função-library",
+    "title": "Workshop em R",
+    "section": "Função library()",
+    "text": "Função library()\nDepois de importar o pacote precisamos carrega-lo para que as funções estejam disponíveis. Fazemos isso com a função library(), onde o argumento dela será o nome do pacote a ser carregado, mas agora sem aspas.\n\n\n\n\n\n\n\n\n\nWorkshop em R: Pacotes e suas funções"
+  },
+  {
+    "objectID": "slides_workshop.html#carregando-a-base-de-dados-filmes",
+    "href": "slides_workshop.html#carregando-a-base-de-dados-filmes",
+    "title": "Workshop em R",
+    "section": "Carregando a base de dados filmes",
+    "text": "Carregando a base de dados filmes\nAgora que o pacote que contém a função está carregado, finalmente poderemos fazer uso da função read_csv() para carregar nossos dados. Vamos ao teste!!\n\n\n\n\n\n\n\n\n\nWorkshop em R: Pacotes e suas funções"
+  },
+  {
+    "objectID": "slides_workshop.html#consultando-nossa-base-importada",
+    "href": "slides_workshop.html#consultando-nossa-base-importada",
+    "title": "Workshop em R",
+    "section": "Consultando nossa base importada",
+    "text": "Consultando nossa base importada\nPodemos verificar como é nossa base de dados ao digitar seu nome.\n\n\n\n\n\n\n\n\n\nWorkshop em R: Pacotes e suas funções"
+  },
+  {
+    "objectID": "slides_workshop.html#bases-de-dados-no-rstudio",
+    "href": "slides_workshop.html#bases-de-dados-no-rstudio",
+    "title": "Workshop em R",
+    "section": "Bases de dados no RStudio",
+    "text": "Bases de dados no RStudio\nTodas as bases de dados importadas para o R são armazenadas na janela Environment.\n\n\n\n\n\n\nWorkshop em R: Pacotes e suas funções"
+  },
+  {
+    "objectID": "slides_workshop.html#função-view",
+    "href": "slides_workshop.html#função-view",
+    "title": "Workshop em R",
+    "section": "Função view()",
+    "text": "Função view()\nPodemos ver os dados em uma janela mais ampla com a função view(filmes).\n\n\n\n\n\n\nWorkshop em R: Pacotes e suas funções"
+  },
+  {
+    "objectID": "slides_workshop.html#correção",
+    "href": "slides_workshop.html#correção",
+    "title": "Workshop em R",
+    "section": "Correção",
+    "text": "Correção\nUtilizamos o seguinte código para carregar o pacote:\n\n\n\n\n\n\n\n\nNa sequência, fazemos o carregamento do pacote para o R conseguir acessar as funções dele.\n\n\n\n\n\n\n\n\n\nWorkshop em R: Pacotes e suas funções"
+  },
+  {
+    "objectID": "slides_workshop.html#funções-do-pacote-dplyr",
+    "href": "slides_workshop.html#funções-do-pacote-dplyr",
+    "title": "Workshop em R",
+    "section": "Funções do pacote dplyr",
+    "text": "Funções do pacote dplyr\nVamos utilizar diversas funções do pacote dplyr para manipular nosso banco de dados e conseguir fazer algum tipo de análise com ele.\nDentro dessas funções, algumas vão controlar o número de variáveis, outras vão aplicar filtros e outras vão nos ajudar a realizar cálculos a partir das colunas já existentes, podendo dar origem a novas colunas.\n\nWorkshop em R: Manipulando os dados"
+  },
+  {
+    "objectID": "slides_workshop.html#syntax-da-função-select-1",
+    "href": "slides_workshop.html#syntax-da-função-select-1",
+    "title": "Workshop em R",
+    "section": "Syntax da função select() 1",
+    "text": "Syntax da função select() 1\nOs argumentos da função select() serão os nomes das variáveis do nosso banco de dados que gostaríamos de trabalhar. Por exemplo, abaixo temos o código que seleciona apenas duas variáveis da base filmes:"
+  },
+  {
+    "objectID": "slides_workshop.html#syntax-da-função-select-2",
+    "href": "slides_workshop.html#syntax-da-função-select-2",
+    "title": "Workshop em R",
+    "section": "Syntax da função select() 2",
+    "text": "Syntax da função select() 2\nÉ ainda possível indicar quais variáveis não queremos, indicando um sinal de menos na frente da variável, como mostra o código seguinte:"
+  },
+  {
+    "objectID": "slides_workshop.html#syntax-da-função-select-3",
+    "href": "slides_workshop.html#syntax-da-função-select-3",
+    "title": "Workshop em R",
+    "section": "Syntax da função select() 3",
+    "text": "Syntax da função select() 3\nAs vezes vai ser interessante indicar a variável a ser selecionada pela posição numérica que ela ocupa no banco de dados!\n\n\n\n\n\n\n\n\n\nWorkshop em R: Manipulando os dados"
+  },
+  {
+    "objectID": "slides_workshop.html#lógica-de-funcionamento-do",
+    "href": "slides_workshop.html#lógica-de-funcionamento-do",
+    "title": "Workshop em R",
+    "section": "Lógica de funcionamento do |>",
+    "text": "Lógica de funcionamento do |&gt;\n\n\n\n\n\n\nWorkshop em R: Manipulando os dados"
+  },
+  {
+    "objectID": "slides_workshop.html#syntax-da-função-rename",
+    "href": "slides_workshop.html#syntax-da-função-rename",
+    "title": "Workshop em R",
+    "section": "Syntax da função rename()",
+    "text": "Syntax da função rename()\nA modificação do nome de uma variável vai exigir apenas que dentro da função rename() identifiquemos o novo nome a ser dado para a variável.\n\n\n\n\n\n\n\n\n\nWorkshop em R: Manipulando os dados"
+  },
+  {
+    "objectID": "slides_workshop.html#função-select-e-nomes",
+    "href": "slides_workshop.html#função-select-e-nomes",
+    "title": "Workshop em R",
+    "section": "Função select() e nomes",
+    "text": "Função select() e nomes\nÉ possível modificar o nome das variáveis utilizando a função select(), algo que poderia nos poupar tempo!\n\n\n\n\n\n\n\n\n\nWorkshop em R: Manipulando os dados"
+  },
+  {
+    "objectID": "slides_workshop.html#syntax-da-função-arrange",
+    "href": "slides_workshop.html#syntax-da-função-arrange",
+    "title": "Workshop em R",
+    "section": "Syntax da função arrange()",
+    "text": "Syntax da função arrange()\nPor padrão, a classificação será sempre de maneira crescente no uso da função arrange().\n\n\n\n\n\n\n\n\n\nWorkshop em R: Manipulando os dados"
+  },
+  {
+    "objectID": "slides_workshop.html#odernando-de-maneira-decrescente",
+    "href": "slides_workshop.html#odernando-de-maneira-decrescente",
+    "title": "Workshop em R",
+    "section": "Odernando de maneira decrescente",
+    "text": "Odernando de maneira decrescente\nPara ordenarmos do maior para o menor, devemos utilizar o argumento desc() dentro da função arrange().\n\n\n\n\n\n\n\n\n\nWorkshop em R: Manipulando os dados"
+  },
+  {
+    "objectID": "slides_workshop.html#syntax-da-função-slice",
+    "href": "slides_workshop.html#syntax-da-função-slice",
+    "title": "Workshop em R",
+    "section": "Syntax da função slice()",
+    "text": "Syntax da função slice()\nPara utilizar slice(), precisamos apenas indicar quais são as linhas que desejamos obter ao final da execução do código.\n\n\n\n\n\n\n\n\n\nWorkshop em R: Manipulando os dados"
+  },
+  {
+    "objectID": "slides_workshop.html#slice_max",
+    "href": "slides_workshop.html#slice_max",
+    "title": "Workshop em R",
+    "section": "slice_max()",
+    "text": "slice_max()\nUma interessante variação da função slice() para combinar com a função arrange(). Servirá para selecionar os maiores valores de determinada variável.\n\n\n\n\n\n\n\n\n\nWorkshop em R: Manipulando os dados"
+  },
+  {
+    "objectID": "slides_workshop.html#syntax-da-função-filter",
+    "href": "slides_workshop.html#syntax-da-função-filter",
+    "title": "Workshop em R",
+    "section": "Syntax da função filter()",
+    "text": "Syntax da função filter()\nNo geral, vamos utilizar algum tipo de operador lógico junto da função filter, por exemplo, na sequência, queremos selecionar os valores que sejam maiores que 500 milhões.\n\n\n\n\n\n\n\n\n\nWorkshop em R: Manipulando os dados"
+  },
+  {
+    "objectID": "slides_workshop.html#operadores-lógicos",
+    "href": "slides_workshop.html#operadores-lógicos",
+    "title": "Workshop em R",
+    "section": "Operadores lógicos",
+    "text": "Operadores lógicos\nOs operadores comuns de serem utilizados dentro da função filter():\n\n== retornar algo que seja exatamente igual ao critério pedido;\n&gt; retorna algo que seja estritamente maior do que o critério pedido;\n&gt;= retorna algo que seja maior ou igual ao critério pedido;\n&lt; retorna algo que seja estritamente menor do que o critério pedido;\n&lt;= retorna algo que seja menor ou igual ao critério pedido;\n!= retorna algo que não seja igual ao critério pedido;\n\n\nWorkshop em R: Manipulando os dados"
+  },
+  {
+    "objectID": "slides_workshop.html#filtros-mais-complexos",
+    "href": "slides_workshop.html#filtros-mais-complexos",
+    "title": "Workshop em R",
+    "section": "Filtros mais complexos",
+    "text": "Filtros mais complexos\nEm varias situações, vamos querer utilizar filtros aplicados sobre mais de uma variável, ou para um intervalo de valores. Nesse caso, vamos precisar utilizar os operadores &, | e %in%. Por exemplo, no caso do &, vamos utilizar em casos onde temos duas variáveis a serem filtradas com critérios diferentes.\n\n\n\n\n\n\n\n\n\nWorkshop em R: Manipulando os dados"
+  },
+  {
+    "objectID": "slides_workshop.html#função-auxiliar-between",
+    "href": "slides_workshop.html#função-auxiliar-between",
+    "title": "Workshop em R",
+    "section": "Função auxiliar between()",
+    "text": "Função auxiliar between()\nQuando fizermos comparações entre valores númericos da seguinte maneira:\n\n\n\n\n\n\n\n\nA melhor alternativa é utilizar a função between() dentro do filter():\n\n\n\n\n\n\n\n\n\nWorkshop em R: Manipulando os dados"
+  },
+  {
+    "objectID": "slides_workshop.html#uso-do-e-in",
+    "href": "slides_workshop.html#uso-do-e-in",
+    "title": "Workshop em R",
+    "section": "Uso do | e %in%",
+    "text": "Uso do | e %in%\nEm algumas situações nosso objetivo será o de filtrar mais de um critério para determinada variável, como no código abaixo:\n\n\n\n\n\n\n\n\nMas podemos utilizar %in% para deixar o código menos pesado e repetitivo:\n\n\n\n\n\n\n\n\n\nWorkshop em R: Manipulando os dados"
+  },
+  {
+    "objectID": "slides_workshop.html#syntax-da-função-count",
+    "href": "slides_workshop.html#syntax-da-função-count",
+    "title": "Workshop em R",
+    "section": "Syntax da função count()",
+    "text": "Syntax da função count()\nPara contar o número de valores dentro de uma variável com a função count(), basta indicar quais das variáveis queremos que ela retorne a quantidade de valores.\n\n\n\n\n\n\n\n\n\nWorkshop em R: Construindo medidas resumo"
+  },
+  {
+    "objectID": "slides_workshop.html#identificando-variáveis-na",
+    "href": "slides_workshop.html#identificando-variáveis-na",
+    "title": "Workshop em R",
+    "section": "Identificando variáveis NA",
+    "text": "Identificando variáveis NA\nPodemos verificar no próximo código, que alguns dos valores da variável são indicados como NA.\n\n\n\n\n\n\n\n\n\nWorkshop em R: Construindo medidas resumo"
+  },
+  {
+    "objectID": "slides_workshop.html#filtrando-valores-na",
+    "href": "slides_workshop.html#filtrando-valores-na",
+    "title": "Workshop em R",
+    "section": "Filtrando valores NA",
+    "text": "Filtrando valores NA\nEm muitas situações, vamos precisar trabalhar com a função filter() aplicada sobre valores NA, e a maneira correta de fazer isso é por meio da seguinte syntax.\n\n\n\n\n\n\n\n\n\nWorkshop em R: Construindo medidas resumo"
+  },
+  {
+    "objectID": "slides_workshop.html#eliminando-valores-na",
+    "href": "slides_workshop.html#eliminando-valores-na",
+    "title": "Workshop em R",
+    "section": "Eliminando valores NA",
+    "text": "Eliminando valores NA\nQuando identificamos os valores NAs em nossa base e precisarmos descartar esses valores, temos a seguinte possibilidade ao utilizarmos a função filter():\n\n\n\n\n\n\n\n\n\nWorkshop em R: Construindo medidas resumo"
+  },
+  {
+    "objectID": "slides_workshop.html#função-drop_na",
+    "href": "slides_workshop.html#função-drop_na",
+    "title": "Workshop em R",
+    "section": "Função drop_na()",
+    "text": "Função drop_na()\nOutra possibilidade é aplicar a função drop_na() ao nosso banco de dados. Podemos fazer isso para uma única variável:\n\n\n\n\n\n\n\n\nMas podemos aplicar isso a todas as variáveis do banco de dados.\n\n\n\n\n\n\n\n\n\nWorkshop em R: Construindo medidas resumo"
+  },
+  {
+    "objectID": "slides_workshop.html#syntax-da-função-distinct",
+    "href": "slides_workshop.html#syntax-da-função-distinct",
+    "title": "Workshop em R",
+    "section": "Syntax da função distinct()",
+    "text": "Syntax da função distinct()\nPara que possamos identificar quais são os valores únicos que uma variável possui, basta indicar dentro da função distinct() o nome da variável que queremos identificar esses valores.\n\n\n\n\n\n\n\n\n\nWorkshop em R: Construindo medidas resumo"
+  },
+  {
+    "objectID": "slides_workshop.html#syntax-da-função-summarise",
+    "href": "slides_workshop.html#syntax-da-função-summarise",
+    "title": "Workshop em R",
+    "section": "Syntax da função summarise()",
+    "text": "Syntax da função summarise()\nPara utilizar a função summarise() vamos precisar primeiro dar uma nome para a estatística que queremos, depois aplicar algumas das funções auxiliares que resumem as variáveis de nosso interesse. Algumas dessas funções auxiliares são: mean(), sum(), median().\n\n\n\n\n\n\n\n\n\nWorkshop em R: Construindo medidas resumo"
+  },
+  {
+    "objectID": "slides_workshop.html#summarise-com-valores-na",
+    "href": "slides_workshop.html#summarise-com-valores-na",
+    "title": "Workshop em R",
+    "section": "summarise() com valores NA",
+    "text": "summarise() com valores NA\nPrecisamos tomar cuidado quando a variável que queremos obter a estatística possuir valores NA. Caso não seja indicado na função para que esses valores sejam ignorados, teremos um erro no cálculo.\n\n\n\n\n\n\n\n\n\nWorkshop em R: Construindo medidas resumo"
+  },
+  {
+    "objectID": "slides_workshop.html#syntax-da-função-group_by",
+    "href": "slides_workshop.html#syntax-da-função-group_by",
+    "title": "Workshop em R",
+    "section": "Syntax da função group_by()",
+    "text": "Syntax da função group_by()\nCaso nosso objetivo seja o de retornar uma estatística desagregada para diferentes grupos presentes em uma outra variável, podemos fazer uso da função group_by() antes de aplicarmos summarise().\n\n\n\n\n\n\n\n\n\nWorkshop em R: Construindo medidas resumo"
+  },
+  {
+    "objectID": "slides_workshop.html#primeiros-ajustes",
+    "href": "slides_workshop.html#primeiros-ajustes",
+    "title": "Workshop em R",
+    "section": "Primeiros ajustes",
+    "text": "Primeiros ajustes\nVamos trabalhar como uma versão menor de nosso banco de dados, apenas para melhor visualização. Para isso vamos utilizar o seguinte código:\n\n\n\n\n\n\n\n\n\nWorkshop em R: Adicionando Colunas"
+  },
+  {
+    "objectID": "slides_workshop.html#syntax-da-função-mutate",
+    "href": "slides_workshop.html#syntax-da-função-mutate",
+    "title": "Workshop em R",
+    "section": "Syntax da função mutate()",
+    "text": "Syntax da função mutate()\nA maneira como adicionamos uma nova variável é muito similar ao uso da função summarise(), primeiro precisamos indicar o nome da nova variável, depois o cálculo que vai produzir a nova variável.\n\n\n\n\n\n\n\n\n\nWorkshop em R: Construindo medidas resumo"
+  },
+  {
+    "objectID": "slides_workshop.html#exemplos-adicionais",
+    "href": "slides_workshop.html#exemplos-adicionais",
+    "title": "Workshop em R",
+    "section": "Exemplos adicionais",
+    "text": "Exemplos adicionais\n\n\n\n\n\n\n\n\n\nWorkshop em R: Construindo medidas resumo"
+  },
+  {
+    "objectID": "slides_workshop.html#syntax-da-função-if_else",
+    "href": "slides_workshop.html#syntax-da-função-if_else",
+    "title": "Workshop em R",
+    "section": "Syntax da função if_else()",
+    "text": "Syntax da função if_else()\nPrecisaremos utilizar em conjunto com mutate() para que a nova coluna seja adicionada com base na condição definida em if_else().\n\n\n\n\n\n\n\n\n\nWorkshop em R: Construindo medidas resumo"
+  },
+  {
+    "objectID": "slides_workshop.html#syntax-da-função-case_when",
+    "href": "slides_workshop.html#syntax-da-função-case_when",
+    "title": "Workshop em R",
+    "section": "Syntax da função case_when()",
+    "text": "Syntax da função case_when()\nTambém é uma função que vai retornar uma nova coluna, por isso seu uso vai estar associado a mutate(). Contudo, permite adicionar mais condições do que em if_else().\n\n\n\n\n\n\n\n\n\nWorkshop em R: Construindo medidas resumo"
+  },
+  {
+    "objectID": "slides_workshop.html#função-read_csv",
+    "href": "slides_workshop.html#função-read_csv",
+    "title": "Workshop em R",
+    "section": "Função read_csv()",
+    "text": "Função read_csv()\nPermite baixar arquivos .csv cujo delimitador é a “,”. É preciso especificar dentro da função read_csv() o caminho do diretório onde se encontra o arquivo a ser carregado.\nPrecisamos indicar o caminho por meio de uma das seguintes formas:\n\n\n\n\n\n\n\n\nOu por meio da seguinte forma:\n\n\n\n\n\n\n\n\n\nWorkshop em R: Importando dados do PC"
+  },
+  {
+    "objectID": "slides_workshop.html#syntax-da-função-read_xlsx",
+    "href": "slides_workshop.html#syntax-da-função-read_xlsx",
+    "title": "Workshop em R",
+    "section": "Syntax da função read_xlsx()",
+    "text": "Syntax da função read_xlsx()\nA maneira como fazemos a importação de uma arquivo de excel é a mesma da que foi feita para o arquivo em .csv. Vamos apenas modificar o nome da função.\n\n\n\n\n\n\n\n\n\nWorkshop em R: Importando dados do PC"
+  },
+  {
+    "objectID": "slides_workshop.html#syntax-da-função-tibble",
+    "href": "slides_workshop.html#syntax-da-função-tibble",
+    "title": "Workshop em R",
+    "section": "Syntax da função tibble()",
+    "text": "Syntax da função tibble()\nA maneira como os dados serão criados será simples. dentro da função tibble() indicamos o nome das variáveis, depois dentro de c(), indicamos os valores associados as variáveis.\n\n\n\n\n\n\n\n\n\nWorkshop em R: Importando dados do PC"
+  }
+]
