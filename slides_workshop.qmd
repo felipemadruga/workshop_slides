@@ -41,11 +41,11 @@ Workshop em R: Considerações Iniciais
 
 Todos os códigos apresentados são para serem implementados no RStudio, embora os códigos apresentados aqui também possam ser executadas no próprio slide. 
 
-Está disponível também para download o script com os códigos que serão utilizados no decorrer do workshop. 
+Está disponível também o script com os códigos que serão utilizados no decorrer do workshop. 
 
 <div>
 
-<a href="https://dl.dropboxusercontent.com/s/abcd1234/arquivo.csv" download="arquivo.csv" style="text-decoration: none; display: inline-flex; align-items: center;">
+<a href="https://dl.dropboxusercontent.com/scl/fi/wavd04x8jrbfauo8ynbqg/script_codigos.R?rlkey=z7zqembl6p8eq1bjt9w6bo7r9&st=64kckjb7&dl=0" target="_blank"  style="text-decoration: none; display: inline-flex; align-items: center;">
   <img src="https://img.icons8.com/?size=100&id=rEdbaA7y65Bz&format=png&color=000000" alt="Download Icon" width="20" height="20" style="margin-right: 5px; filter: invert(27%) sepia(96%) saturate(6165%) hue-rotate(358deg) brightness(94%) contrast(102%);">
   <span style="color: #058206">Baixar script com os códigos</span>
 </a>
@@ -424,7 +424,7 @@ filmes |>
 ```{webr}
 # selecionando todas as variáveis, menos movie e genre
 filmes |> 
-  select(movie, genre)
+  select(-movie, -genre)
 ```
 
 ## Syntax da função `select()` 3
