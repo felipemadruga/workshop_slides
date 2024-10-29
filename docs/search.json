@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "slides_workshop.html#agradecimentos",
+    "href": "slides_workshop.html#agradecimentos",
+    "title": "Workshop em R",
+    "section": "Agradecimentos",
+    "text": "Agradecimentos\n\n\n\n\n\n\nWorkshop em R: Considerações Iniciais"
+  },
+  {
     "objectID": "slides_workshop.html#objetivos-com-o-workshop",
     "href": "slides_workshop.html#objetivos-com-o-workshop",
     "title": "Workshop em R",
@@ -11,7 +18,7 @@
     "href": "slides_workshop.html#códigos-e-materiais-de-apoio",
     "title": "Workshop em R",
     "section": "Códigos e Materiais de Apoio",
-    "text": "Códigos e Materiais de Apoio\nTodos os códigos apresentados são para serem implementados no RStudio, embora os códigos apresentados aqui também possam ser executadas no próprio slide.\nEstá disponível também para download o script com os códigos que serão utilizados no decorrer do workshop.\n\n  Baixar script com os códigos \n\nVocês podem contar ainda com um pequeno material de apoio, uma pequena apostila, preparada para que possam revisar alguns dos conceitos utilizados hoje!\n\n  Apostila \n\n\nWorkshop em R: Considerações Iniciais"
+    "text": "Códigos e Materiais de Apoio\nTodos os códigos apresentados são para serem implementados no RStudio, embora os códigos apresentados aqui também possam ser executadas no próprio slide.\nEstá disponível também o script com os códigos que serão utilizados no decorrer do workshop.\n\n  Baixar script com os códigos \n\nVocês podem contar ainda com um pequeno material de apoio, uma pequena apostila, preparada para que possam revisar alguns dos conceitos utilizados hoje!\n\n  Apostila \n\n\nWorkshop em R: Considerações Iniciais"
   },
   {
     "objectID": "slides_workshop.html#diferenciando-r-do-rstudio",

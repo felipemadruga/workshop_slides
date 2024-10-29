@@ -17,7 +17,7 @@ engine: knitr
 
 # Considerações Iniciais
 
-## Agradecimentos {.center visibility="hidden"}
+## Agradecimentos {.center }
 
 ![](imagens/logos.png){fig-align="center"}
 
