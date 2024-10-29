@@ -17,7 +17,7 @@ engine: knitr
 
 # Considerações Iniciais
 
-## Agradecimentos {.center}
+## Agradecimentos {.center visibility="hidden"}
 
 ![](imagens/logos.png){fig-align="center"}
 
@@ -996,3 +996,5 @@ meus_dados <- tibble(
 ::: footer
 Workshop em R: Importando dados do PC
 :::
+
+# Gracias!! 
