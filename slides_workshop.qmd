@@ -2,28 +2,18 @@
 title: "Workshop em R"
 author: "Prof. Felipe Madruga"
 lightbox: true
-
-format: 
+format:
   live-revealjs:
     theme: [default, custom.scss]
     code-block-height: 650px
     logo: imagens/logos.png
     transition: slide
-
 engine: knitr
 ---
 
 {{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
 
 # Considerações Iniciais
-
-## Agradecimentos {.center }
-
-![](imagens/logos.png){fig-align="center"}
-
-::: footer
-Workshop em R: Considerações Iniciais
-:::
 
 ## Objetivos com o Workshop {.center}
 
